@@ -101,34 +101,6 @@ curl -X POST http://127.0.0.1:8000/route \
   -d '{"start":"Rajiv Chowk","end":"Huda City Centre","algorithm":"compare"}'
 ```
 
-## Deploy on Vercel
-
-This repository is already prepared for Vercel deployment using:
-
-- api/index.py as Python serverless entrypoint
-- vercel.json for routing static frontend and backend API
-
-### Deploy via Dashboard
-
-1. Push this repo to GitHub
-2. Import the repo in Vercel
-3. Keep root directory as project root
-4. Deploy
-
-### Deploy via CLI
-
-```bash
-npm i -g vercel
-vercel login
-vercel
-vercel --prod
-```
-
-After deployment, verify:
-
-- / loads the frontend
-- /docs opens FastAPI docs
-- /stations returns JSON
 
 ## Notes
 
